@@ -1,0 +1,16 @@
+<p>Cadastro de Fabricante</p>
+<form  [formGroup]="fabricanteForm">
+  <div>
+      <div><span>id: </span></div>
+      <div>
+        <label for="name">Nome: </label>
+        <input id="name" placeholder="Nome" formControlName="name" />
+      </div>
+      <div>
+        <label for="observacao">Observação: </label>
+        <input id="observacao" placeholder="Observacao" formControlName="observacao" />
+       </div>    
+      <button type="button" (click)="save()" >Salvar</button>
+    </div>
+</form>
+  

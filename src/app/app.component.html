@@ -1,13 +1,9 @@
-<h1> Curso Angular </h1>
-<h3> {{title}} </h3>
-
-<nav class="navbar bg-light">
-  <div class="container">
-    <ul>
-      <li><a routerLink="/cliente" routerLinkActive="active" >Cliente</a></li>
-      <li><a routerLink="/produto" routerLinkActive="active" >Produto</a></li>
-    </ul>  
-  </div>
+<h1>{{title}}</h1>
+<nav>
+  <a routerLink="/cliente" routerLinkActive="active" >Cliente</a>
+  <a routerLink="/produto" routerLinkActive="active" >Produto</a>  
+  <a routerLink="/marca"   routerLinkActive="active" >Marca</a>  
+  <a routerLink="/fabricante"   routerLinkActive="active" >Fabricante</a>  
 </nav>
 
 <router-outlet></router-outlet>

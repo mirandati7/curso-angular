@@ -1,0 +1,18 @@
+<p>Edição da Marca</p>
+<form [formGroup]="marcaForm">
+  <div *ngIf="marca">
+      <h2>{{marca.name | uppercase}} Detalhe</h2>
+      <div><span>id: </span>{{marca.id}}</div>
+      <div>
+        <label for="name">Nome: </label>
+        <input id="name" placeholder="Nome"   formControlName="name"/>
+       </div>
+       <div>
+        <label for="observacao">Observação: </label>
+        <input id="observacao" placeholder="Observação"   formControlName="observacao"/>
+      </div>
+      <button type="button" (click)="voltar()">Voltar</button>
+      <button type="button" (click)="save()">Salvar</button>
+    </div>
+</form>
+  
